@@ -22,7 +22,6 @@ spec:
         - name: "troubleshooting-app"
           image: cepgbaseacr.azurecr.io/troubleshooting:latest
           resources:
-            limits:
-              memory: "1000Gi"
             requests:
-              memory: "50Gi"
+              memory: "512Mi"
+              cpu: "1"
