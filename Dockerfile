@@ -12,7 +12,8 @@ CMD [ "ls" ]
 
 VOLUME /tmp
 
-ARG JAR_FILE=build/libs/*.jar
+#ARG JAR_FILE=build/libs/*.jar
+ARG JAR_FILE=*.jar
 # or Maven
 # ARG JAR_FILE_PATH=target/*.jar
 
