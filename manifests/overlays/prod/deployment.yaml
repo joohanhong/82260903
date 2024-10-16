@@ -1,14 +1,14 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: "pod-82260903"
+  name: "prod-82260903"
   namespace: "82260903"
 spec:
   replicas: 1
   template:
     spec:
       containers:
-        - name: "pod-82260903" 
+        - name: "prod-82260903" 
           command: ["java","-jar","/app.jar"]
           args: ["--spring.config.location=file:/config/application.yml"]
           volumeMounts:

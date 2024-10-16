@@ -5,13 +5,13 @@ metadata:
 spec:
   ingressClassName: ingress-internal
   rules:
-  - host: "web.ce-82260903-sa.kubepia.net"
+  - host: "base.ce-82260903-sa.kubepia.net"
     http:
       paths:
       - path: /
         backend:
           service:
-            name: pod-82260903
+            name: base-82260903
             port:
               number: 8080
         pathType: Prefix

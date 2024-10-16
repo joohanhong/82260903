@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-    name: pod-82260903
+    name: base-82260903
 spec:
     ports:
     - port: 8080 
     selector:
-        app: "pod-82260903"
+        app: "base-82260903"
