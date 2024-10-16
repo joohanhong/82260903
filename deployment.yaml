@@ -14,10 +14,10 @@ spec:
         app: "troubleshooting-app"
     spec:
       tolerations:
-      - key: taint-test
-        operator: Equal
-        value: value1
-        effect: NoSchedule
+      - key: "taint-test"
+        operator: "Equal"
+        value: "taint-value"
+        effect: "NoSchedule"
       containers:
         - name: "troubleshooting-app"
           image: cepgbaseacr.azurecr.io/troubleshooting:latest
