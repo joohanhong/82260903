@@ -8,7 +8,7 @@ spec:
   template:
     spec:
       containers:
-        - name: "82260903" 
+        - name: "pod-82260903" 
           command: ["java","-jar","/app.jar"]
           args: ["--spring.config.location=file:/config/application.yml"]
           volumeMounts:
@@ -23,7 +23,7 @@ spec:
       volumes:
       - name: "82260903-volume"
         persistentVolumeClaim:
-          claimName: "82260903"
+          claimName: "pvc-82260903"
       - name: application-properties
         configMap:
           name: "82260903-configmap"
