@@ -1,7 +1,8 @@
 apiVersion : apps/v1
 kind: Deployment
 metadata:
-  name: "82260903" 
+  name: "82260903"
+  namespace: "82260903"
 spec:
   replicas: 1
   template:
@@ -22,7 +23,7 @@ spec:
       volumes:
       - name: "82260903-volume"
         persistentVolumeClaim:
-          claimName: cepg-aa-std-pvc
+          claimName: "82260903"
       - name: application-properties
         configMap:
           name: "82260903-configmap"
