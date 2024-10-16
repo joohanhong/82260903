@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: cepg-aa-std-pvc
+  name: pvc-82260903
 spec:
   accessModes:
     - ReadWriteMany
-  storageClassName: cepg-aa-std-rwmany
+  storageClassName: azurefile
   resources:
     requests:
       storage: 1Gi
