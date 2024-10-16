@@ -1,7 +1,7 @@
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/postgres
+    url: jdbc:postgresql://pgsql-82260903.postgres.database.azure.com:5432/postgres
     username: dskt82260903
     password: Ktds!1234
     hikari:
@@ -31,4 +31,4 @@ management:
         include: "*"
 
 pvc:
-  path: /mnt/cloud-sample
+  path: /mnt/pvc-82260903
