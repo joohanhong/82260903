@@ -23,6 +23,6 @@ spec:
           image: cepgbaseacr.azurecr.io/troubleshooting:latest
           resources:
             limits:
-              memory: "100Gi"
+              memory: "1000Gi"
             requests:
               memory: "50Gi"
