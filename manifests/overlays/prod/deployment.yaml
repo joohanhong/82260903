@@ -22,7 +22,7 @@ spec:
       volumes:
       - name: "82260903-volume"
         persistentVolumeClaim:
-          claimName: "pvc-82260903"
+          claimName: "azurefile"
       - name: application-properties
         configMap:
           name: "82260903-configmap"
