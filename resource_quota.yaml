@@ -5,4 +5,4 @@ metadata:
   namespace: troubleshooting
 spec:
   hard:
-    limits.memory: 10Gi
+    limits.memory: 1000Gi
