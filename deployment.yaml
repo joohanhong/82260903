@@ -2,7 +2,7 @@ apiVersion : apps/v1
 kind: Deployment
 metadata:
   name: "troubleshooting-app"
-  namespace: "troubleshooting"
+  namespace: troubleshooting
 spec:
   replicas: 1
   selector:
@@ -23,5 +23,8 @@ spec:
           image: cepgbaseacr.azurecr.io/troubleshooting:latest
           resources:
             limits:
-              memory: 800Mi
-              cpu: 1
+              memory: "800Mi"
+              cpu: "800M"
+            requests:
+              memory: "200Mi"
+              cpu: "200"
