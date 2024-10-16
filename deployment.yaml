@@ -21,10 +21,10 @@ spec:
       containers:
         - name: "troubleshooting-app"
           image: cepgbaseacr.azurecr.io/troubleshooting:latest
-          resources:
-            limits:
-              memory: "512Mi"
-              cpu: "500M"
-            requests:
-              memory: "100Mi"
-              cpu: "100M"
+          #resources:
+          #  limits:
+          #    memory: "512Mi"
+          #    cpu: "500M"
+          #  requests:
+          #    memory: "100Mi"
+          #    cpu: "100M"
