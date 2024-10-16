@@ -1,4 +1,0 @@
-resources:
-- deployment-base.yaml
-- service-base.yaml
-- ingress-base.yaml
